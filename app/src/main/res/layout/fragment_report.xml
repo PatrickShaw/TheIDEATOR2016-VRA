@@ -1,41 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/layout_padding">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
+        android:layout_height="wrap_content">
+        <Spinner
                 android:hint="@string/hint_type_of_incident"
-                android:id="@+id/edit_type_of_incident"
+                android:id="@+id/spinner_type_of_incident"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
+        <Spinner
+            android:prompt="@string/hint_when_the_incident_took_place"
+            android:id="@+id/spinner_when_the_incident_took_place"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:hint="@string/hint_who_did_the_incident_happen_to"
-                android:id="@+id/edit_who_did_the_incident_happen_to"
+            android:layout_height="wrap_content"/>
+        <Spinner
+                android:prompt="@string/hint_australia_state_or_territory"
+                android:id="@+id/spinner_australia_start_or_territory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:hint="@string/hint_australia_state_or_territory"
-                android:id="@+id/edit_australia_start_or_territory"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -76,36 +63,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:hint="@string/hint_offender_gender"
-                android:id="@+id/edit_offender_gender"
+        <Spinner
+                android:prompt="@string/hint_offender_gender"
+                android:id="@+id/spinner_offender_gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:hint="@string/hint_offender_eye_color"
-                android:id="@+id/edit_offender_eye_color"
+        <Spinner
+                android:prompt="@string/hint_offender_eye_color"
+                android:id="@+id/spinner_offender_eye_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
+        <Spinner
                 android:hint="@string/hint_offender_hair_color"
-                android:id="@+id/edit_offender_hair_color"
+                android:id="@+id/spinner_offender_hair_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
 
 
 
@@ -118,16 +90,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:hint="@string/hint_offender_appearance"
-                android:id="@+id/edit_offender_appearance"
+        <Spinner
+                android:prompt="@string/hint_offender_appearance"
+                android:id="@+id/spinner_offender_appearance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
 
         <!-- offender_height picked up as integer, sok android:inputType="number" to make the input a number -->
         <android.support.design.widget.TextInputLayout
@@ -161,25 +128,18 @@
                 android:layout_height="wrap_content" />
         </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:hint="@string/hint_told_anyone"
-                android:id="@+id/edit_told_anyone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_told_anyone"
+            android:prompt="@string/hint_told_anyone"
+            tools:listitem="@android:layout/simple_spinner_item" />
+        <Button
+            android:hint="@string/hint_photo"
+            android:id="@+id/button_photo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:hint="@string/hint_photo"
-                android:id="@+id/edit_photo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
-
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored" />
     </LinearLayout>
 </ScrollView>

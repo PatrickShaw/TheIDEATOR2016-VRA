@@ -10,18 +10,10 @@
     android:fitsSystemWindows="true"
     android:id="@+id/layout_login"
     tools:context=".SignInActivity">
-    <android.support.design.widget.AppBarLayout
+    <include
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        >
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
+        layout="@layout/app_bar_default"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,7 +57,7 @@
                     android:textAlignment="viewStart">
 
                     <AutoCompleteTextView
-                        android:id="@+id/input_email"
+                        android:id="@+id/edit_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_login_email"
@@ -88,7 +80,7 @@
                     android:textAlignment="viewStart">
 
                     <EditText
-                        android:id="@+id/input_password"
+                        android:id="@+id/edit_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/hint_password"
@@ -113,7 +105,8 @@
                     android:textAllCaps="false"
                     android:layout_marginTop="16dp"
 
-                    android:transitionName="button_sign_up_sign_in" />
+                    android:transitionName="button_sign_up_sign_in"
+                    style="@style/Widget.AppCompat.Button.Colored" />
 
                 <TextView
                     android:layout_width="wrap_content"

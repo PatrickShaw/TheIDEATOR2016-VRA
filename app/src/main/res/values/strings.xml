@@ -5,6 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_sign_in">Sign in</string>
     <string name="dont_have_an_account">Don\'t have an account? Register</string>
+    <string name="transition_profile_image">image_profile</string>
     <string name="action_settings">Settings</string>
     <string name="label_welcome_back">Welcome back</string>
     <string name="transition_email">edit_email</string>
