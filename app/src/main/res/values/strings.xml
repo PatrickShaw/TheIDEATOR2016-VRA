@@ -1,11 +1,22 @@
 <resources>
     <string name="app_name">Violence Reporting Application</string>
-
+    <string name="fake_app_name">Calendar</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string name="title_sign_in">Sign in</string>
+    <string name="dont_have_an_account">Don\'t have an account? Register</string>
     <string name="action_settings">Settings</string>
-
+    <string name="label_welcome_back">Welcome back</string>
+    <string name="transition_email">edit_email</string>
+    <string name="hint_login_email">Email or username</string>
+    <string name="hint_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="forgot_password">Forgot your password? Recover your account</string>
+    <string name="error_need_to_fill_in">You need to fill this in</string>
+    <string name="action_fake_to_real_app"/>
+    <string name="action_report">Report</string>
+    <string name="action_connect">Conect with others</string>
+    <string name="action_recent_uploads">Recent uploads</string>
     <!-- hints based on sara -->
     <string name="hint_type_of_incident">Type of incident</string>
     <string name="hint_who_did_the_incident_happen_to">Who did the incident happen to?</string>
