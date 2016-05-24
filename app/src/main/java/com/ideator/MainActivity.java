@@ -14,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -37,6 +39,10 @@ public class MainActivity extends AppCompatActivity
 
         mNavigation = (NavigationView) findViewById(R.id.nav_view);
         mNavigation.setNavigationItemSelectedListener(this);
+        View navigationHeader = mNavigation.getHeaderView(0);
+        TextView textAccountContext = (TextView)findViewById(R.id.text_account_context);
+        ImageView imageNavigationHeaderProfile = (ImageView)findViewById(R.id.image_profile);
+        textAccountContext.setText(ConnectionHelper.getUsername());
     }
 
     @Override
