@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/card_resting_elevation"
+    app:cardBackgroundColor="@color/background_1">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <include layout="@layout/subsection_poster"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_overflow_menu"
+                android:layout_gravity="center_vertical"
+                android:minWidth="0dp"
+                android:contentDescription="@string/description_more"
+                android:scaleType="fitXY"
+                style="?android:attr/borderlessButtonStyle"
+                android:src="@drawable/ic_overflow_menu"
+                android:tint="?android:attr/textColorPrimary"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/subsection_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

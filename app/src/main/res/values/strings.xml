@@ -30,6 +30,8 @@
     <string name="hint_offender_eye_color">Offender eye colour</string>
     <string name="hint_offender_hair_color">Offender hair colour</string>
     <string name="hint_other">Other</string>
+    <string name="description_more">More</string>
+    <string name="description_empty">Empty</string>
 
     <string name="hint_offender_appearance">Offender appearance</string>
     <string name="hint_offender_height">Offender height</string>

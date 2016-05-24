@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/layout_padding"
+    android:paddingBottom="@dimen/layout_padding"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:clipToPadding="false"
+    android:id="@+id/layout_subsection_post_header"
+    >
+    <com.ideator.CircularImageView
+        android:layout_width="@dimen/circle_size"
+        android:layout_height="@dimen/circle_size"
+        android:id="@+id/image_profile"
+        android:layout_marginRight="@dimen/layout_padding"
+        android:layout_marginEnd="@dimen/layout_padding"
+        android:background="@drawable/ic_circle_default"
+        android:transitionName="@string/transition_profile_image"
+        android:elevation="@dimen/btn_raised_elevation" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_details"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_header_post"
+            android:foreground="?android:attr/selectableItemBackground"
+            tools:text="Patrick Shaw started a  a r awerwae r"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textAlignment="viewStart"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_date"
+            tools:text="12/01/1996"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textAlignment="viewStart"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textColor="?android:attr/textColorSecondary" />
+    </LinearLayout>
+
+</LinearLayout>

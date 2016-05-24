@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/_activity_subsection_indentation_padding_left"
+    android:paddingStart="@dimen/_activity_subsection_indentation_padding_left"
+    android:clipToPadding="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_activity_subsection_indentation_circle_padding_left"
+        android:paddingStart="@dimen/_activity_subsection_indentation_circle_padding_left"
+        android:clipToPadding="false">
+        <View
+            android:background="@color/divider_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/_activity_subsection_indentation_padding_left"
+            android:layout_marginStart="@dimen/_activity_subsection_indentation_padding_left"
+            android:clipToPadding="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_post_content"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare varius quam nec feugiat. Suspendisse vitae facilisis massa. Fusce ultricies, ante ut euismod tincidunt, felis velit semper diam, id volutpat ante elit a dolor. Phasellus rhoncus libero pellentesque est mattis commodo. Proin ut ante justo. Cras purus tellus, varius eu ex vitae, feugiat tristique nulla. Donec vel ultrices ex, at vehicula est. In hac habitasse platea dictumst. Aenean tincidunt molestie tortor in auctor. Proin facilisis, tellus in cursus auctor, elit massa posuere nulla, ut semper sem orci at dolor. Fusce placerat sagittis eros vulputate blandit. Aliquam fermentum tristique dolor. Curabitur et placerat enim, sed porta nisl."
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:paddingTop="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding"
+            android:paddingBottom="@dimen/layout_padding"
+            android:paddingLeft="@dimen/layout_padding"
+            android:clipToPadding="false" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:id="@+id/image_post_content"
+            android:clipToPadding="false"/>
+    </LinearLayout>
+
+</FrameLayout>

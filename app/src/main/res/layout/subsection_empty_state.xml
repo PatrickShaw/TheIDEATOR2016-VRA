@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="@dimen/ic_no_items_text_size"
+        android:layout_height="@dimen/ic_no_items_text_size"
+        android:contentDescription="@string/description_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:id="@+id/text_empty_icon"
+        android:tint="?android:attr/textColorSecondary"
+        android:scaleType="fitXY" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="You have no requests"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:id="@+id/text_empty_statement"
+        android:gravity="center"
+        android:textSize="@dimen/abc_text_size_subhead_material" />
+</LinearLayout>

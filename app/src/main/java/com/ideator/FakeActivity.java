@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 
 /**
  * @author Patrick Shaw (Patrick.Leong.Shaw@gmail.com)
@@ -24,6 +25,8 @@ public class FakeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fake);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        if(getSupportFragmentManager().findFragmentByTag("test") == null)
+            getSupportFragmentManager().beginTransaction().replace(R.id.layout_fragment_holder, FakeFragment.newInstance(), "test").commit();
     }
 
     @Override

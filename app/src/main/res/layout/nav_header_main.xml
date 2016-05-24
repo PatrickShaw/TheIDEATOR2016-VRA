@@ -19,7 +19,7 @@
         android:orientation="vertical"
         android:rowCount="3"
         android:columnCount="2">
-        <com.rundl.gui.views.CircularImageView
+        <com.ideator.CircularImageView
             android:id="@+id/image_profile"
             android:layout_width="@dimen/nav_profile_image_size"
             android:layout_height="@dimen/nav_profile_image_size"
