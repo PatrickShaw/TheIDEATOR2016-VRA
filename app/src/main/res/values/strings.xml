@@ -6,6 +6,19 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
+
+
+
+    <string name="hint_other">Other</string>
+    <string name="hint_offender_appearance">Offender appearance</string>
+    <string name="hint_offender_height">Offender height</string>
+    <string name="hint_remember_anything_else_offender">Is there anything else you remember about the offender</string>
+
+
+    <string name="hint_what_happened">Tell us what happened</string>
+    <string name="hint_told_anyone">Have you told anyone</string>
+    <string name="hint_photo">Attach photo</string>
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
