@@ -1,10 +1,12 @@
 <resources>
-    <string name="app_name">IDEATOR</string>
+    <string name="app_name">Violence Reporting Application</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- hints based on sara -->
     <string name="hint_type_of_incident">Type of incident</string>
     <string name="hint_who_did_the_incident_happen_to">Who did the incident happen to?</string>
     <string name="hint_australia_state_or_territory">Australian state or territory</string>
@@ -16,14 +18,10 @@
     <string name="hint_offender_eye_color">Offender eye colour</string>
     <string name="hint_offender_hair_color">Offender hair colour</string>
     <string name="hint_other">Other</string>
-    <string name="title_activity_scrolling">ScrollingActivity</string>
-
-
 
     <string name="hint_offender_appearance">Offender appearance</string>
     <string name="hint_offender_height">Offender height</string>
     <string name="hint_remember_anything_else_offender">Is there anything else you remember about the offender</string>
-
 
     <string name="hint_what_happened">Tell us what happened</string>
     <string name="hint_told_anyone">Have you told anyone</string>
