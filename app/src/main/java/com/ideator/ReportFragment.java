@@ -56,12 +56,11 @@ public class ReportFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_report, container, false);
 
-
          mEditTypeIncident = (Spinner) view.findViewById(R.id.spinner_type_of_incident);
 
          mEditWhoIncident = (Spinner) view.findViewById(R.id.spinner_who_the_incident_happened_to);
 
-         mEditAusState = (Spinner) view.findViewById(R.id.edit_australia_state_or_territory);
+         mEditAusState = (Spinner) view.findViewById(R.id.spinner_australia_start_or_territory);
 
          mEditAddLocIncident = (EditText) view.findViewById(R.id.edit_address_or_location_of_the_incident);
 
