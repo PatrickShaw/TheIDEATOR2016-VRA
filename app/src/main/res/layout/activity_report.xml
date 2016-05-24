@@ -102,6 +102,8 @@
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
 
+
+
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -116,8 +118,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:hint="@string/hint_other"
-            android:id="@+id/edit_other"
+            android:hint="@string/hint_offender_appearance"
+            android:id="@+id/edit_offender_appearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- offender_height picked up as integer, sok android:inputType="number" to make the input a number -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_offender_height"
+            android:id="@+id/edit_offender_height"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_remember_anything_else_offender"
+            android:id="@+id/edit_remember_anything_else_offender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_what_happened"
+            android:id="@+id/edit_what_happened"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_told_anyone"
+            android:id="@+id/edit_told_anyone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_photo"
+            android:id="@+id/edit_photo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
