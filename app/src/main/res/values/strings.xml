@@ -20,7 +20,6 @@
 
 
 
-    <string name="hint_other">Other</string>
     <string name="hint_offender_appearance">Offender appearance</string>
     <string name="hint_offender_height">Offender height</string>
     <string name="hint_remember_anything_else_offender">Is there anything else you remember about the offender</string>
