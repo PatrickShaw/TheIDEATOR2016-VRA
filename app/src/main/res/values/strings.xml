@@ -5,6 +5,17 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="hint_type_of_incident">Type of incident</string>
+    <string name="hint_who_did_the_incident_happen_to">Who did the incident happen to?</string>
+    <string name="hint_australia_state_or_territory">Australian state or territory</string>
+    <string name="hint_address_or_location_of_the_incident">Address or location of the incident</string>
+    <string name="hint_when_the_incident_took_place">When the incident took palce</string>
+    <string name="hint_offender_name">Offender name</string>
+    <string name="hint_offender_address">Offender address</string>
+    <string name="hint_offender_gender">Offender gender</string>
+    <string name="hint_offender_eye_color">Offender eye colour</string>
+    <string name="hint_offender_hair_color">Offender hair colour</string>
+    <string name="hint_other">Other</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
 
 
