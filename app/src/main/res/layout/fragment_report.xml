@@ -20,13 +20,10 @@
             android:layout_height="wrap_content"/>
         <Spinner
                 android:prompt="@string/hint_australia_state_or_territory"
-                android:id="@+id/spinner_australia_start_or_territory"
-            android:layout_height="wrap_content">
-            <EditText
-                android:hint="@string/hint_australia_state_or_territory"
-                android:id="@+id/edit_australia_state_or_territory"
+                android:id="@+id/spinner_australia_state_or_territory"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+             android:layout_height="wrap_content"/>
+
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
