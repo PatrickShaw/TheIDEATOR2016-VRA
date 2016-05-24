@@ -2,34 +2,126 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <
-    <EditText
+
+    <!-- show hint, grab content -->
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_type_of_incident"
+            android:id="@+id/edit_type_of_incident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_who_did_the_incident_happen_to"
+            android:id="@+id/edit_who_did_the_incident_happen_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_australia_state_or_territory"
+            android:id="@+id/edit_australia_start_or_territory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_address_or_location_of_the_incident"
+            android:id="@+id/edit_address_or_location_of_the_incident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_when_the_incident_took_place"
+            android:id="@+id/edit_when_the_incident_took_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_offender_name"
+            android:id="@+id/edit_offender_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_offender_address"
+            android:id="@+id/edit_offender_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_offender_gender"
+            android:id="@+id/edit_offender_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_offender_eye_color"
+            android:id="@+id/edit_offender_eye_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_offender_hair_color"
+            android:id="@+id/edit_offender_hair_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_other"
+            android:id="@+id/edit_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/hint_other"
+            android:id="@+id/edit_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
 </LinearLayout>
