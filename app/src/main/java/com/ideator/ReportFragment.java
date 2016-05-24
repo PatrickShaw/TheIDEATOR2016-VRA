@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -48,7 +49,7 @@ public class ReportFragment extends Fragment {
 
     private Spinner mEditToldAnyone;
 
-    private EditText mEditPhoto;
+    private Button mButtonPhoto;
 
     @Nullable
     @Override
@@ -56,9 +57,9 @@ public class ReportFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_report, container, false);
 
 
-         mEditTypeIncident = (Spinner) view.findViewById(R.id.edit_type_of_incident);
+         mEditTypeIncident = (Spinner) view.findViewById(R.id.spinner_type_of_incident);
 
-         mEditWhoIncident = (Spinner) view.findViewById(R.id.edit_who_did_the_incident_happen_to);
+         mEditWhoIncident = (Spinner) view.findViewById(R.id.spinner_who_the_incident_happened_to);
 
          mEditAusState = (Spinner) view.findViewById(R.id.edit_australia_state_or_territory);
 
@@ -66,19 +67,19 @@ public class ReportFragment extends Fragment {
 
          mEditWhenIncident = (EditText) view.findViewById(R.id.edit_when_the_incident_took_place);
 
-         mEditOffenderName = (EditText) view.findViewById(R.id.edit_effender_name);
+         mEditOffenderName = (EditText) view.findViewById(R.id.edit_offender_name);
 
-         mEditOffenderAddress = (EditText) view.findViewById(R.id.edit_effender_address);
+         mEditOffenderAddress = (EditText) view.findViewById(R.id.edit_offender_address);
 
-         mEditOffenderGender = (Spinner) view.findViewById(R.id.edit_effender_gender);
+         mEditOffenderGender = (Spinner) view.findViewById(R.id.spinner_offender_gender);
 
-         mEditOffenderEyeColor = (Spinner) view.findViewById(R.id.edit_effender_eye_color);
+         mEditOffenderEyeColor = (Spinner) view.findViewById(R.id.spinner_offender_eye_color);
 
-         mEditOffenderHairColor = (Spinner) view.findViewById(R.id.edit_effender_hair_color);
+         mEditOffenderHairColor = (Spinner) view.findViewById(R.id.spinner_offender_hair_color);
 
          mEditOffenderOther = (EditText) view.findViewById(R.id.edit_other);
 
-         mEditOffenderApperence = (Spinner) view.findViewById(R.id.edit_offender_appearance);
+         mEditOffenderApperence = (Spinner) view.findViewById(R.id.spinner_offender_appearance);
 
          mEditOffenderHeight = (EditText) view.findViewById(R.id.edit_offender_height);
 
@@ -86,9 +87,9 @@ public class ReportFragment extends Fragment {
 
          mEditWhatHappened = (EditText) view.findViewById(R.id.edit_what_happened);
 
-         mEditToldAnyone = (Spinner) view.findViewById(R.id.edit_told_anyone);
+         mEditToldAnyone = (Spinner) view.findViewById(R.id.spinner_told_anyone);
 
-         mEditPhoto = (EditText) view.findViewById(R.id.edit_photo);
+         mButtonPhoto = (Button) view.findViewById(R.id.button_photo);
                 
         return view;
 

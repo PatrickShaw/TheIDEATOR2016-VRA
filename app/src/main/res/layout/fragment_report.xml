@@ -14,8 +14,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         <Spinner
-            android:prompt="@string/hint_when_the_incident_took_place"
-            android:id="@+id/spinner_when_the_incident_took_place"
+            android:prompt="@string/hint_who_the_incident_happened_to"
+            android:id="@+id/spinner_who_the_incident_happened_to"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Spinner
@@ -25,7 +25,6 @@
             android:layout_height="wrap_content"/>
             <EditText
                 android:hint="@string/hint_australia_state_or_territory"
-                android:id="@+id/edit_australia_state_or_territory"
                 android:id="@+id/spinner_australia_state_or_territory"
                 android:layout_width="match_parent"
              android:layout_height="wrap_content"/>
