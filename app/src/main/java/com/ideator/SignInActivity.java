@@ -34,8 +34,6 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 attemptSignIn();
-                Intent intentToMain = MainActivity.newIntent(SignInActivity.this);
-                startActivity(intentToMain);
             }
         });
     }
