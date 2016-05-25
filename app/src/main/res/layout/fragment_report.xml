@@ -64,6 +64,13 @@
                 android:layout_height="wrap_content" />
         </android.support.design.widget.TextInputLayout>
         <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_told_anyone"
+            android:prompt="@string/hint_told_anyone"
+            tools:listitem="@android:layout/simple_spinner_item" />
+        <Spinner
                 android:prompt="@string/hint_offender_gender"
                 android:id="@+id/spinner_offender_gender"
                 android:layout_width="match_parent"
@@ -80,6 +87,12 @@
                 android:layout_height="wrap_content" />
 
 
+        <Spinner
+                android:prompt="@string/hint_offender_appearance"
+                android:id="@+id/spinner_offender_appearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -89,11 +102,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </android.support.design.widget.TextInputLayout>
-        <Spinner
-                android:prompt="@string/hint_offender_appearance"
-                android:id="@+id/spinner_offender_appearance"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
         <!-- offender_height picked up as integer, sok android:inputType="number" to make the input a number -->
         <android.support.design.widget.TextInputLayout
@@ -127,18 +135,15 @@
                 android:layout_height="wrap_content" />
         </android.support.design.widget.TextInputLayout>
 
-        <Spinner
-            style="@style/Widget.AppCompat.Spinner.Underlined"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner_told_anyone"
-            android:prompt="@string/hint_told_anyone"
-            tools:listitem="@android:layout/simple_spinner_item" />
         <Button
             android:hint="@string/hint_photo"
             android:id="@+id/button_photo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.Button.Colored" />
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="#FFFFFF"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColorHint="#FFFFFF"
+            android:textColorHighlight="#FFFFFF" />
     </LinearLayout>
 </ScrollView>

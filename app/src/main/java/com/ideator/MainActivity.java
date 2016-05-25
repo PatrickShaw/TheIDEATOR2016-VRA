@@ -62,13 +62,13 @@ public class MainActivity extends AppCompatActivity
         {
             case R.id.action_report:
                 Log.d("RAWR","ER");
-                getSupportFragmentManager().beginTransaction().add(ReportFragment.newInstance(), "test").addToBackStack("test").commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.layout_fragment_holder, ReportFragment.newInstance()).commit();
                 break;
             case R.id.action_connect:
-                getSupportFragmentManager().beginTransaction().add(ConnectFragment.newInstance(), "test2").addToBackStack("test2").commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.layout_fragment_holder, ConnectFragment.newInstance()).commit();
                 break;
             case R.id.action_recent_uploads:
-                getSupportFragmentManager().beginTransaction().add(RecentUploadsFragment.newInstance(),"test3").addToBackStack("test3").commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.layout_fragment_holder, RecentUploadsFragment.newInstance()).commit();
                 break;
             case R.id.action_settings:
                 Intent intentToSettings = SettingsActivity.newIntent(this);

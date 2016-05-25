@@ -118,10 +118,6 @@ public class ReportFragment extends Fragment {
         mButtonPhoto = (Button) view.findViewById(R.id.button_photo);
 
 
-        //FirebaseAuth mAuth = FirebaseAuth.getInstance();
-
-        StorageReference mStorageRef = FirebaseStorage.getInstance().getReference();
-
 
         return view;
 

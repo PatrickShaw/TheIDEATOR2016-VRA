@@ -6,6 +6,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -35,11 +36,15 @@ public class RecentUploadsFragment extends EndlessScrollerFragment<Date, VideoRe
     @Override
     protected void onCreateRecyclerView(RecyclerView recyclerView) {
         recyclerView.addItemDecoration(new SpacingItemDecoration(getContext(), R.dimen.layout_padding, 1));
-        mValues.add(new Date());
-        mValues.add(new Date());
-        mValues.add(new Date());
-        mValues.add(new Date());
-        mValues.add(new Date());
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(2016,4,23);
+        mValues.add(calendar.getTime());
+        calendar.set(2016,2,23);
+        mValues.add(calendar.getTime());
+        calendar.set(2016,2,10);
+        mValues.add(calendar.getTime());
+        calendar.set(2016,1,23);
+        mValues.add(calendar.getTime());
     }
 
     @Override

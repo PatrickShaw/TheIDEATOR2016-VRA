@@ -39,7 +39,8 @@
 
     <string name="hint_what_happened">Tell us what happened</string>
     <string name="hint_told_anyone">Have you told anyone</string>
-    <string name="hint_photo">Attach photo</string>
+    <string name="hint_photo">Attach media</string>
+    <string name="hint_submit">Submit</string>
 
     <string name="large_text">
         "Material is the metaphor.\n\n"
