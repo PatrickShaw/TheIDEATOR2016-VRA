@@ -32,7 +32,7 @@ import java.util.List;
  * @author Patrick Shaw (Patrick.Leong.Shaw@gmail.com), Rundl Pty. Ltd.
  * @since 25/01/2016
  */
-public abstract class EndlessScrollerFragment<T, A extends EndlessScrollerAdapter> extends DialogFragment {
+public abstract class EndlessScrollerFragment<T, A extends EndlessScrollerAdapter> extends Fragment {
     protected List<T> mValues = new ArrayList<>();
     private String mNextPageUrl = null;
     private boolean mIsLoadingNextPage = false;
@@ -135,9 +135,11 @@ public abstract class EndlessScrollerFragment<T, A extends EndlessScrollerAdapte
         mSwipeRefreshLayout = (SwipeRefreshLayout)view.findViewById(getSwipeRefreshLayoutId());
         mLayoutEmptyState = (LinearLayout)view.findViewById(getEmptyStateId());
         mTextEmptyStateMessage = (TextView)view.findViewById(R.id.text_empty_statement);
-        mTextEmptyStateMessage.setText(getEmptyStateMessage());
+        if(mTextEmptyStateMessage != null)
+            mTextEmptyStateMessage.setText(getEmptyStateMessage());
         mTextEmptyStateIcon = (ImageView) view.findViewById(R.id.text_empty_icon);
-        mTextEmptyStateIcon.setImageDrawable(getEmptyStateIcon());
+        if(mTextEmptyStateIcon !=null)
+            mTextEmptyStateIcon.setImageDrawable(getEmptyStateIcon());
 
         mRecyclerAdapter = getRecyclerAdapter();
         mRecyclerView.setAdapter(mRecyclerAdapter);

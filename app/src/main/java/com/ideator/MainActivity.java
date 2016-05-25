@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -60,10 +61,14 @@ public class MainActivity extends AppCompatActivity
         switch(item.getItemId())
         {
             case R.id.action_report:
+                Log.d("RAWR","ER");
+                getSupportFragmentManager().beginTransaction().add(ReportFragment.newInstance(), "test").addToBackStack("test").commit();
                 break;
             case R.id.action_connect:
+                getSupportFragmentManager().beginTransaction().add(ConnectFragment.newInstance(), "test2").addToBackStack("test2").commit();
                 break;
             case R.id.action_recent_uploads:
+                getSupportFragmentManager().beginTransaction().add(RecentUploadsFragment.newInstance(),"test3").addToBackStack("test3").commit();
                 break;
             case R.id.action_settings:
                 Intent intentToSettings = SettingsActivity.newIntent(this);
