@@ -17,6 +17,12 @@
             layout="@layout/app_bar_default"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_fragment_holder"
+            >
+        </FrameLayout>
     </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView

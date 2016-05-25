@@ -34,7 +34,10 @@ import pub.devrel.easypermissions.EasyPermissions;
  * s
  */
 public class ReportFragment extends Fragment {
-
+    public static ReportFragment newInstance()
+    {
+        return new ReportFragment();
+    }
     private Spinner mEditTypeIncident;
 
     private Spinner mEditWhoIncident;
